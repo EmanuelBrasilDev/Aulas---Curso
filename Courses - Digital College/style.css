@@ -1,0 +1,221 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+/* Estilização da fonte dos cursos */
+.course {
+    height: 45px;
+    font-size: 27px;
+    margin-left: auto;
+    font-weight: bold
+}
+/* Estilização da fonte do tempo de duração dos cursos */
+#time {
+    font-size: 17px;
+    font-weight: bold;
+}
+.type {
+    font-weight: bold;
+}
+/* Estilo do corpo da página */
+body {
+    background-color: #111010;
+}
+/* Estilo do contêiner de cursos */
+.courses {
+    width: 880px;
+    padding: 10px;
+    margin:auto;
+}
+/* Estilo do título da página */
+h1 {
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 50px;
+    margin-left: 10px;
+    font-family: var(--fontFamily);
+}
+/* Estilo das linhas de cursos */
+.course-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px !important;
+}
+/* Estilo das caixas de cursos */
+.item {
+    flex-basis: calc(32.50%);
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    height: 180px;
+}
+/* Estilo das margens entre as caixas */
+.item:not(:last-child) {
+    margin-right: 20px;
+}
+.row3 {
+    margin-right: 0px;
+}
+/* Estilo do texto dentro das caixas */
+.item span {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 15px;
+    height: 0px;
+}
+/* Estilo da borda à direita das caixas */
+.item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    border-radius: 0 10px 10px 0;
+    box-sizing: border-box;
+    opacity: 10;
+    transition: opacity 0.3s ease;
+}
+/* Cores da borda de cada caixa */
+.item.edge1::before {
+    background-color: #f9e784;
+}
+.item.edge2::before {
+    background-color: #a2faa3;
+}
+.item.edge3::before {
+    background-color: rgb(255 255 255);
+}
+.item.edge4::before {
+    background-color: #623cea;
+}
+.item.edge5::before {
+    background-color: rgb(246 170 28);
+}
+.item.edge6::before {
+    background-color: rgb(238 66 102);
+}
+.item.edge7::before {
+    background-color: rgb(6 57 73);
+}
+.item.edge8::before {
+    background-color: rgb(4 53 101);
+}
+/* Mudança de cor ao passar o mouse sobre as caixas */
+.item {
+    position: relative;
+}
+.item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 0;
+    height: 100%;
+    transition: width 0.3s ease;
+}
+.item:hover::after {
+    right: 0;
+    width: 100%;
+}
+.item span, .item p {
+    position: relative;
+    z-index: 1;
+}
+.item.edge1::after {
+    background-color: #f9e784;
+}
+.item.edge2::after {
+    background-color: #a2faa3; 
+}
+.item.edge3::after {
+    background-color: rgb(255 255 255);  
+}
+.item.edge4::after {
+    background-color: #623cea; 
+}
+.item.edge5::after {
+    background-color: rgb(246 170 28);
+}
+.item.edge6::after {
+    background-color: rgb(238 66 102); 
+}
+.item.edge7::after {
+    background-color: rgb(6 57 73);
+}
+.item.edge8::after {
+    background-color: rgb(4 53 101);
+}
+.item.edge1:hover {
+    color: #623cea;
+    cursor: pointer;
+}
+.item.edge2:hover {
+    color: black;
+    cursor: pointer;
+}
+.item.edge3:hover {
+    color: black;  
+    cursor: pointer;
+}
+.item.borda4:hover {
+    color: #f9e784;
+    cursor: pointer;
+}
+.item.edge5:hover {
+    color: #f9e784;
+    cursor: pointer;
+}
+.item.edge6:hover {
+    color: #f9e784;
+    cursor: pointer;
+}
+.item.edge7:hover{
+    color: rgb(255 255 255);
+    cursor: pointer;
+}
+.item.edge8:hover{
+    color: #f9e784;
+    cursor: pointer;
+}
+/* Centralização do texto em algumas caixas */
+#Center-Data {
+    line-height: 80px;
+    text-align: center;
+    margin-right: 30px;
+    display: flex;
+}
+#Center-Market {
+    text-align: center;
+    line-height: 80px;
+    margin-right: 30px;
+    display: flex;
+}
+#Center-Cyber {
+    text-align: center;
+    line-height: 80px;
+    margin-right: 100px;
+    display: flex;
+}
+#Center-Scrum {
+    text-align: center;
+    line-height: 80px;
+    margin-right: 180px;
+    display: flex;
+}
+#Center-Story {
+    text-align: center;
+    line-height: 80px;
+    margin-right: 110px;
+    display: flex;
+}
+#Center-Costumer {
+    text-align: center;
+    margin-left: 0px;
+    line-height: 80px;
+    display: flex;
+}

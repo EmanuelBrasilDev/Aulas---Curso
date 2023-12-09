@@ -1,0 +1,150 @@
+/* Estilo da tabela */
+#table-1 table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-left: 110px;
+}
+
+/* Efeito de hover nas linhas da tabela */
+#table-1 table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+/* Estilo das células da tabela (cabeçalho e corpo) */
+#table-1 table th,
+#table-1 table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Estilo da linha horizontal na tabela */
+#table-1 table hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    max-width: 15px;
+}
+
+/* Estilo para texto 'small-sign' no cabeçalho da tabela */
+#table-1 table th .small-sign {
+    font-weight: normal;
+}
+
+/* Estilo para o texto 'plan' no cabeçalho da tabela */
+#table-1 table th .plan {
+    font-size: 19px;
+    font-family: var(--wsr-font-family, HelveticaNeueW01-65Medi, HelveticaNeueW02-65Medi, HelveticaNeueW10-65Medi),"Helvetica Neue","Helvetica","Arial","\30E1\30A4\30EA\30AA","meiryo","\30D2\30E9\30AE\30CE\89D2\30B4 pro w3","hiragino kaku gothic pro","sans-serif";
+}
+
+/* Estilo para o cabeçalho principal */
+h1 {
+    text-align: center;
+}
+
+/* Estilo para parágrafos */
+p {
+    text-align: center;
+}
+
+/* Estilo da célula vazia no canto superior esquerdo */
+#empty-box {
+    width: 280px;
+    height: 250px;
+}
+
+/* Estilo para as células dos planos */
+.box-plan {
+    width: 180px;
+}
+
+/* Estilo para o preço */
+.price {
+    font-size: 30px;
+    margin-top: 80px;
+}
+
+/* Estilo para os botões */
+button {
+    margin-top: 35px;
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    font-size: 15px;
+    border: 1px solid #3899ec!important;
+    color: #3899ec;
+    font-weight: bold; 
+}
+
+/* Estilo específico para o botão com a classe 'btn' */
+.btn {
+    margin-bottom: 23px;
+}
+
+/* Efeito de hover nos botões */
+button:hover {
+    color: #f0f0f0;
+    background-color: #3899ec;
+}
+
+/* Estilo para células de marcação 'tick' */
+#table-1 table td.tick {
+    text-align: center;
+    font-size: small;
+    font-weight: bold;
+}
+
+/* Estilo para células de coluna de texto */
+#table-1 table td.text-column {
+    text-align: center;
+    font-size: small;
+    color: #3b3b3b;
+}
+
+/* Estilo geral para as células da tabela */
+#table-1 table td {
+    font-family: var(--wsr-font-family, HelveticaNeueW01-55Roma, HelveticaNeueW02-55Roma, HelveticaNeueW10-55Roma),"Helvetica Neue","Helvetica","Arial","\30E1\30A4\30EA\30AA","meiryo","\30D2\30E9\30GI\30CE\89D2\30B4 pro w3","hiragino kaku gothic pro","sans-serif";
+    font-size: 15px;
+}
+
+/* Estilo específico para células de informações com ícones */
+#table-1 table tbody tr td.info-cell {
+    position: relative;
+}
+
+/* Estilo para o ícone de informação e sua posição */
+#table-1 table tbody tr td.info-cell .info-icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid rgb(158, 153, 153);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+/* Estilo para o tooltip e sua posição inicial (não exibido) */
+#table-1 table tbody tr td.info-cell .tooltip {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: calc(100% + 5px);
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Efeito de exibição do tooltip ao passar o mouse */
+#table-1 table tbody tr td.info-cell:hover .tooltip {
+    display: block;
+}
